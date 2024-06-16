@@ -1,4 +1,4 @@
-package main
+package dormitory
 
 import "gorm.io/gorm"
 

@@ -1,6 +1,4 @@
-package main
-
-// database/database.go
+package db
 
 import (
 	"log"

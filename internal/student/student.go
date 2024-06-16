@@ -1,6 +1,8 @@
-package main
+package student
 
-import "gorm.io/gorm"
+import (
+	"gorm.io/gorm"
+)
 
 type Student struct {
 	gorm.Model
@@ -11,9 +13,4 @@ type Student struct {
 	LastName     string `json:"last_name"`
 	FirstName    string `json:"first_name"`
 	Id           int    `json:"id"`
-}
-
-func (student Student) AddStudent() int {
-	DB.Db.Create(&student)
-	return student.Id
 }
