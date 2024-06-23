@@ -1,6 +1,4 @@
-package main
-
-// database/database.go
+package database
 
 import (
 	"log"
@@ -22,7 +20,7 @@ func ConnectDB() {
 	// Имя пользователя базы данных, пароль и имя базы данных
 	// берутся из переменных окружения,
 	// они описаны в файле .env
-	dsn := "host=db user=postgres password=5280 dbname=dean port=5432 sslmode=disable TimeZone=Europe/Moscow"
+	dsn := "host=localhost user=postgres password=5280 dbname=dean port=5432 sslmode=disable TimeZone=Europe/Moscow"
 	// создаём подключение к базе данных.
 	// В &gorm.Config настраивается логер,
 	// который будет сохранять информацию
